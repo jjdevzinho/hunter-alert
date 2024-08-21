@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root,
+  .dark {
+    --bg-body: #1f1d2b;
+    --text-body: #d2d1d1;
+
+    --bg-base-1: 229 19 18; /* hsl(229, 19%, 18%) */
+    --bg-base-2: 229 16 21; /* hsl(229, 16%, 21%) */
+    --bg-base-3: 229 13 24; /* hsl(229, 13%, 24%) */
+    --bg-base-4: 229 10 27; /* hsl(229, 10%, 27%) */
+    --text-base-1: #f7f7f7;
+    --text-base-2: #c4c3c3;
+    --text-base-3: #7e7e7e;
+
+    --bg-primary: #53b1ff;
+    --bg-secondary: #ff81bd;
+    --text-primary: #53b1ff;
+    --text-secondary: #ff81bd;
+
+    --bg-success: #00ff7f;
+    --bg-info: #00d8ff;
+    --bg-warning: #ffbc00;
+    --bg-danger: #ff3d71;
+    --text-success-contrast: #000;
+    --text-info-contrast: #000;
+    --text-warning-contrast: #000;
+    --text-danger-contrast: #000;
+  }
+}
+
+@layer base {
+  body {
+    @apply text-body text-base;
+  }
+}

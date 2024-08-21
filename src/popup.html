@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+  <meta charset="UTF-8" />
+  <head>
+    <title>Alerta de Meia-Noite</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body class="bg-body text-body w-80">
+    <main class="max-w-xs flex flex-col gap-6 p-4 text-base-2">
+      <div class="flex gap-2">
+        <img src="assets/icons/icon-128.png" height="16" alt="icon-logo" class="w-10 h-10 object-cover" />
+        <div class="flex flex-col justify-center w-full">
+          <h1 class="text-primary">Hunter País</h1>
+          <a href="https://superfans.top" target="_blank" class="text-xs text-base-3">https://superfans.top</a>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between gap-2">
+        <span>Hora Atual</span>
+        <span class="text-center text-lg bg-base-1 rounded-full p-1 px-4" id="clock">00:00:00</span>
+      </div>
+
+      <div class="flex justify-between items-center gap-2">
+        <span>Próximo Hunter</span>
+        <div class="countdown text-center text-lg bg-warning text-warning-contrast rounded-full p-1 px-4" id="countdown">00:00:00</div>
+      </div>
+
+      <fieldset class="border border-base-3 p-4 rounded-md flex flex-col gap-4 w-full">
+        <legend class="border border-base-3 px-2 rounded-md">Notificação</legend>
+        <div class="flex justify-between gap-4 w-full border border-base-3 p-2 rounded-md hover:bg-base-3">
+          <label for="disableAlert" class="flex-grow cursor-pointer">Desativar</label>
+          <input type="checkbox" id="disableAlert" />
+        </div>
+        <div class="flex justify-between gap-1 border border-base-3 p-2 rounded-md hover:bg-base-3">
+          <label for="alertTime" class="self-start cursor-pointer">Adiantar</label>
+          <select id="alertTime" class="bg-base-1 rounded-md px-2 py-0.5 ml-auto">
+            <option value="0">Não</option>
+            <option value="1">1 Min.</option>
+            <option value="3">3 Min.</option>
+            <option value="5">5 Min.</option>
+            <option value="7">7 Min.</option>
+            <option value="10">10 Min.</option>
+            <option value="15">15 Min.</option>
+            <option value="20">20 Min.</option>
+            <option value="30">30 Min.</option>
+          </select>
+        </div>
+      </fieldset>
+      <div class="flex items-center justify-between">
+        <a href="https://superfans.top/games/hunter/country" target="_blank" class="border border-base-3 px-4 py-1 rounded-full text-center hover:bg-base-3">Ir para o Hunter</a>
+        <button type="button" id="clearBadge" class="bg-danger text-danger-contrast flex items-center justify-center p-1 rounded-full text-center hover:opacity-70 hidden" title="Limpar Ícone">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5" viewBox="0 0 24 24"><path fill="currentColor" d="M16 11h-1V3c0-1.1-.9-2-2-2h-2c-1.1 0-2 .9-2 2v8H8c-2.76 0-5 2.24-5 5v7h18v-7c0-2.76-2.24-5-5-5m3 10h-2v-3c0-.55-.45-1-1-1s-1 .45-1 1v3h-2v-3c0-.55-.45-1-1-1s-1 .45-1 1v3H9v-3c0-.55-.45-1-1-1s-1 .45-1 1v3H5v-5c0-1.65 1.35-3 3-3h8c1.65 0 3 1.35 3 3z" /></svg>
+        </button>
+      </div>
+    </main>
+    <footer class="flex justify-center -m-2 py-2 mt-2 border-t border-base-1">
+      <small class="text-secondary text-2xs">
+        <a href="https://superfans.top/profiles/777777777" class="text-base-3" target="_blank" rel="noopener noreferrer">SuperFans - DevZinho</a>
+        ❤
+      </small>
+    </footer>
+    <script src="scripts/popup.js"></script>
+  </body>
+</html>

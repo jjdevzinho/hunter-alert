@@ -1,0 +1,48 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./src/**/*.{html,js,css}"],
+  theme: {
+    extend: {
+      colors: {
+        body: "var(--bg-body)",
+        "base-1": "hsl(var(--bg-base-1))",
+        "base-2": "hsl(var(--bg-base-2))",
+        "base-3": "hsl(var(--bg-base-3))",
+        primary: "var(--bg-primary)",
+        secondary: "var(--bg-secondary)",
+        success: "var(--bg-success)",
+        info: "var(--bg-info)",
+        warning: "var(--bg-warning)",
+        danger: "var(--bg-danger)",
+      },
+    },
+    textColor: {
+      body: "var(--text-body)",
+      "base-1": "var(--text-base-1)",
+      "base-2": "var(--text-base-2)",
+      "base-3": "var(--text-base-3)",
+      primary: "var(--text-primary)",
+      secondary: "var(--text-secondary)",
+      "success-contrast": "var(--text-success-contrast)",
+      "info-contrast": "var(--text-info-contrast)",
+      "warning-contrast": "var(--text-warning-contrast)",
+      "danger-contrast": "var(--text-danger-contrast)",
+    },
+    fontSize: {
+      "2xs": "0.625rem",
+      xs: "0.75rem",
+      sm: "0.875rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "4rem",
+      "7xl": "5rem",
+      "8xl": "6rem",
+      "9xl": "8rem",
+    },
+  },
+};
