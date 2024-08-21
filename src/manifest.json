@@ -1,8 +1,10 @@
 {
   "manifest_version": 3,
   "name": "Hunter Super Fans",
+  "description": "Extensão para notificar a Hora do Hunter País no site Super Fans.",
   "version": "1.0",
   "permissions": ["storage", "alarms", "notifications"],
+  "default_locale": "pt_BR",
 
   "icons": {
     "48": "assets/icons/icon-48.png",
